@@ -4,7 +4,7 @@ resource "google_project" "project" {
   org_id          = var.org_id
   billing_account = var.billing_account
 
-  auto_create_network = true  # Set to false if you want to create and manage networks manually.
+  auto_create_network = true  
 }
 
 resource "google_project_service" "compute" {
@@ -12,4 +12,4 @@ resource "google_project_service" "compute" {
   service = "compute.googleapis.com"
 }
 
-# Enable any other required services in a similar way
+

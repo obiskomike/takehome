@@ -7,7 +7,7 @@ resource "google_sql_database_instance" "postgres" {
   settings {
     tier = var.machine_type
 
-    # Additional settings like backups, maintenance windows, etc., can be configured here.
+     
   }
 }
 

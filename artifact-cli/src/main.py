@@ -27,7 +27,7 @@ def latest_artifact_version(repo_name, artifact_name):
 
     request = ListDockerImagesRequest(
         parent=f"projects/{repo_name}/locations/-/repositories/{artifact_name}",
-        page_size=1,  # Retrieve only the latest version
+        page_size=1,  
         order_by="update_time desc"
     )
 
